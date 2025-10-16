@@ -14,7 +14,7 @@ public abstract class Product {
     private String name;
     @Size(min = 0, message = "Price must be higher than 0")
     private double price;
-    public Product(){}
+    //public Product(){}
     public Product(String id, String name, double price){
         this.id = id;
         this.name = name;

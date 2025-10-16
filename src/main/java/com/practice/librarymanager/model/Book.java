@@ -20,7 +20,8 @@ public class Book extends Product{
     @NotBlank(message = "Purchase date cannot be null")
     private Date purchaseDate;
     private String genre;
-    public Book(Integer isbnNumber, String author, String publisher, int stock, Date purchaseDate, String genre){
+    public Book(String id, String name, double price, Integer isbnNumber, String author, String publisher, int stock, Date purchaseDate, String genre){
+        super(id, name, price);
         this.isbnNumber = isbnNumber;
         this.author = author;
         this.publisher = publisher;
